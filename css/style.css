@@ -14,7 +14,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	/* background-color: blue; */
 	background-image: url('https://cdn.pixabay.com/photo/2017/05/09/03/46/alberta-2297204_960_720.jpg');
-	Background-size: cover;
+	background-size: cover;
 }
 
 .form {
@@ -23,7 +23,7 @@ body {
 	/* height: 50vh; */
 	text-align: center;
 	font-size: 20px;
-	background-color: rgba(255, 255, 255, .35);
+	background-color: rgba(255, 255, 255, 0.35);
 	box-shadow: 0 0 10px black;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .label {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .input {
@@ -52,14 +52,18 @@ body {
 
 .error {
 	margin: 5px 0 0 10px;
-	font-size: 14px;
-	color: tomato;
+	font-size: 12px;
+	color: blue;
 	visibility: hidden;
+}
+
+.error__input {
+	border: 1px solid red;
 }
 
 .form__buttons {
 	display: flex;
-    justify-content: flex-end;	
+	justify-content: flex-end;
 }
 
 .clear__btn,
@@ -87,7 +91,6 @@ body {
 	background-color: rgb(0, 107, 194);
 }
 
-
 .popup {
 	position: absolute;
 	top: 150px;
@@ -99,10 +102,10 @@ body {
 	flex-direction: column;
 	width: 600px;
 	height: 200px;
-	background-color: rgba(255, 255, 255, .55);
+	background-color: rgba(255, 255, 255, 0.55);
 	border: 2px solid black;
 	border-radius: 5px;
-	transition: top .5s;
+	transition: top 0.5s;
 }
 
 .popup__text {
@@ -113,6 +116,27 @@ body {
 	margin-top: 20px;
 }
 
-.popup__show {
-    top: 150px
+.form__shadow {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.65);
+}
+
+
+.shadow-animation {
+	animation: show-shadow .3s
+}
+
+@keyframes show-shadow {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
