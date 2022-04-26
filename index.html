@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ToDo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,200;0,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d85729398b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form class="form">
+            <h1 class="form__title">Zarejestruj się!</h1>
+            <div class="name form__box">
+                <label for="name">Nazwa użytkownika</label>
+                <input type="text" id="name" class="input name__input" placeholder="Podaj nazwę użytkownika">
+                <p class="error name__error">error</p>
+            </div>
+            <div class="pass form__box">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" class="input pass__input" placeholder="Podaj hasło">
+                <p class="error pass__error">error</p>
+            </div>
+            <div class="pass2 form__box">
+                <label for="password2">Powtórz hasło:</label>
+                <input type="password" class="input pass2__input" placeholder="Powtórz hasło">
+                <p class="error pass2__error">error</p>
+            </div>
+            <div class="email form__box">
+                <label for="email">Adres e-mail:</label>
+                <input type="email" class="input email__input" placeholder="email">
+                <p class="error email__error">error</p>
+            </div>
+
+            <div class="form__buttons">
+                <button class="button clear__btn button--highlighted">Wyczyść</button>
+                <button class="button send__btn button--highlighted">Wyślij</button>
+            </div>
+
+            <div class="popup form__popup">
+                <p class="popup__text">Formularz został poprawnie wysłany!</p>
+                <button class="popup__btn button--highlighted">Zamknij</button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
